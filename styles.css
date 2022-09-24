@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: contain;
+}
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+.order-card{
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white; 
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.order-card .card-image{
+    width: 100%;
+    height: 30vh;
+}
+
+.order-card .card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.order-card .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.order-card .info h1{
+    margin: 20px;
+    font-weight: 900;
+    color: var(--dark-blue);
+    
+}
+
+.order-card .info p{
+    color: var(--desaturated-blue);
+    margin: 0 20px 10px 20px;;	
+    font-size: 1.4rem;
+}
+
+.order-card .info .info-plan{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 20px;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 8px;
+}
+
+.info-plan-content{
+    display: flex;
+}
+
+.order-card .info .info-plan .info-plan-content span{
+    width: 48px;
+    height: 48px;
+    background-image: url("images/icon-music.svg");
+    margin-right: 20px;
+}
+
+.order-card .info .info-plan a{
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.info-plan--price{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+}
+
+.order-card .info .info-plan .info-plan--price p{
+    margin: 0;
+}
+
+.order-card .info .info-plan .info-plan--price p:nth-child(1){
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.order-card .button-content{
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.order-card .button-content button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--bright-blue);
+    border: solid var(--bright-blue);
+    border-radius: 12px;
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.order-card .button-content a{
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin-bottom:10px;
+
+}
