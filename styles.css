@@ -96,7 +96,7 @@ body{
 .order-card .info .info-plan .info-plan-content span{
     width: 48px;
     height: 48px;
-    background-image: url("images/icon-music.svg");
+    background-image: url("/images/icon-music.svg");
     margin-right: 20px;
 }
 
